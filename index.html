@@ -30,11 +30,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* 背景图片：用户可替换同目录图片名 */
-            background: url('image39.jpg') no-repeat center center;
-            background-size: contain;
-            background-color: #1f1a12; /* 边缘填充色，古旧感 */
-            cursor: crosshair;
+       /* 背景图片：用户可替换同目录图片名 */
+background: url('image39.jpg') no-repeat center center;
+background-size: contain;
+background-color: #1f1a12;
+cursor: crosshair;
+/* 新增优化代码 */
+background-attachment: fixed; /* 可选，减少滚动时的重绘 */
+will-change: background-image; /* 提示浏览器提前准备资源 */
         }
 
         /* ----- 硝烟粒子画布 (高强度战火硝烟) ----- */
